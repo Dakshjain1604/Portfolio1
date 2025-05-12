@@ -1,6 +1,6 @@
 
 import { useLocation } from "react-router-dom";
-const defaultStyling = "p-4 w-fit flex justify-center rounded-3xl gap-5 md:gap-10 lg:gap-20   text-lg cursor-pointer ";
+
 
 
 
