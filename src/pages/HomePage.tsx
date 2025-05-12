@@ -9,7 +9,7 @@ import { Experience } from "../compoents/Experience"
 
 export function HomePage() {
     return <>
-        <div className="h-full flex flex-col bg-black text-white">
+        <div className="h-[100%] flex flex-col bg-black text-white ">
             <Headerbar/>
             <HeroContent/>
             <BottomBar/>
