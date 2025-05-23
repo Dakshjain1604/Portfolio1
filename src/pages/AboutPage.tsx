@@ -52,7 +52,7 @@ export function AboutMe() {
         {/* Image Section */}
         <div className="flex justify-center items-center">
           <img
-            src="src/images/Dakshbest.jpg"
+            src="src/images/profile.jpg"
             alt="Daksh"
             className="rounded-full w-40 sm:w-56 md:w-72 lg:w-80 h-auto object-cover"
           />

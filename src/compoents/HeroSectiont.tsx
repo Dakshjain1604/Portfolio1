@@ -27,7 +27,7 @@ export function HeroContent() {
               duration: 1,
             }}
             style={{ y, opacity }}
-            src="src/images/DakshVidNew.mp4"
+            src="src/images/hero-video.mp4"
             autoPlay
             muted
             loop

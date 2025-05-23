@@ -10,8 +10,14 @@ export function Projects() {
             <Card title="Brainly" image="src/images/brainlyImages/BrainlyImage.png" onClick={()=>{
                 window.open("https://github.com/Dakshjain1604/Brainly","_blank")
             }}></Card>
-            <Card title="Live Tracking Application" image="src/images/LiveTracking.png" onClick={()=>{
+            <Card title="Live Tracking Application" image="src/images/live-tracking.png" onClick={()=>{
                 window.open("https://github.com/Dakshjain1604/Live-Tracking","_blank");
+            }}></Card>
+            
+            </div>
+            <div className="flex flex-col justify-center md:flex-row md:w-full gap-10 mt-10 ">
+            <Card title="Transactly" image="src/images/transactly.png" onClick={()=>{
+                window.open("https://github.com/Dakshjain1604/transactly","_blank")
             }}></Card>
             </div>
         </div>
