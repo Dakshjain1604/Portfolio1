@@ -9,14 +9,14 @@ export function AboutMe() {
         {/* Text Section */}
         <div className="text-base sm:text-lg pt-10 sm:pt-20 flex flex-col pb-10 sm:pb-20 max-w-3xl">
           <div className="text-2xl sm:text-4xl pb-4 sm:pb-8">
-            Hi, I’m{" "}
+            Hi, I'm{" "}
             <b className="text-3xl sm:text-5xl text-white">Daksh Jain</b>
           </div>
           <div className="text-justify leading-relaxed text-sm sm:text-base md:text-lg">
             <p>
               Full-stack web developer with a strong foundation in building
               scalable and secure web applications using technologies like
-              Node.js, Express, React.js, MySQL, and Docker. I’ve gained
+              Node.js, Express, React.js, MySQL, and Docker. I've gained
               industry experience through internships at Celebal Technologies,
               where I worked on backend systems, JWT authentication, API design,
               and containerized deployments. I also have hands-on knowledge in
@@ -41,9 +41,9 @@ export function AboutMe() {
 
             <p className="pt-6">
               I'm a <b>5×</b> Microsoft Certified professional and a consistent
-              learner who’s always exploring new technologies and improving my
+              learner who's always exploring new technologies and improving my
               craft. I enjoy turning ideas into reliable solutions and
-              collaborating on meaningful projects. Let’s connect and build
+              collaborating on meaningful projects. Let's connect and build
               something impactful together!
             </p>
           </div>
@@ -52,7 +52,7 @@ export function AboutMe() {
         {/* Image Section */}
         <div className="flex justify-center items-center">
           <img
-            src="src/images/profile.jpg"
+            src="/images/profile.jpg"
             alt="Daksh"
             className="rounded-full w-40 sm:w-56 md:w-72 lg:w-80 h-auto object-cover"
           />
