@@ -6,7 +6,7 @@ import { Contact } from './pages/Contact'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/about" element={<AboutMe/>} />
