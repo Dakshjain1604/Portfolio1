@@ -14,19 +14,25 @@ export function Projects() {
         </motion.div>
         <div className="flex flex-col gap-20">
         <div className="flex gap-20 px-35">
-                <Card title="Brainly" image="/images/brainlyImages/BrainlyImage.png"  delay={0.3} onClick={()=>{
+                <Card title="Brainly" image="/images/brainlyImages/BrainlyImage.png"  delay={0.3} onClick_GitHub={()=>{
                     window.open("https://github.com/Dakshjain1604/Brainly","_blank")
                 }}></Card>
             
-                <Card title="Live Tracking Application" image="/images/live-tracking.png" delay={0.3} onClick={()=>{
+                <Card title="Live Tracking Application" image="/images/live-tracking.png" delay={0.3} onClick_GitHub={()=>{
                     window.open("https://github.com/Dakshjain1604/Live-Tracking","_blank");
                 }}></Card>
             
         </div>
         <div className="flex gap-20 px-35 justify-center">
-                <Card title="Transactly" image="/images/transactly.png" delay={0.35}onClick={()=>{
-                    window.open("https://github.com/Dakshjain1604/transactly","_blank")
-                }}></Card>
+                <Card title="Transactly" image="/images/transactly.png" delay={0.35} onClick_GitHub={()=>{
+                    window.open("https://github.com/Dakshjain1604/transactly_frontend","_blank")
+                }}
+                onClick_Deployment={()=>{
+                    window.open("transactly-frontend.vercel.app","_blank")
+                }}
+                >
+
+                </Card>
         </div>
         </div>
     </div>

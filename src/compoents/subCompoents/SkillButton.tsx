@@ -22,18 +22,18 @@ export function SkillBox(props: Skills) {
             left: 2,
             right: 2
         }}
-        className="flex flex-row rounded-3xl shadow-lg shadow-gray-800 bg-black text-white sm:w-fit h-fit justify-center items-center p-4"
+        className="flex flex-row rounded-3xl shadow-lg shadow-gray-800 bg-black text-white sm:w-fit h-fit justify-center items-center p-4 gap-3"
     >
         <motion.div 
             whileHover={{ rotate: 360 }}
             transition={{ duration: 0.5 }}
-            className="pr-3"
+            className="flex items-center justify-center w-8 h-8"
         >
             {props.logo}
         </motion.div>
         <motion.div 
             whileHover={{ scale: 1.1 }}
-            className="text-xs sm:text-lg"
+            className="text-xs sm:text-lg whitespace-nowrap"
         >
             {props.text}
         </motion.div>

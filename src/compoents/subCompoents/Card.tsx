@@ -1,11 +1,13 @@
 import { MouseEventHandler } from "react";
 import { Github } from "../../icons/github";
 import { motion } from "framer-motion";
+import { WebSiteIcon } from "../../icons/webisteIcon";
 
 interface card {
     title: string,
     image?: string,
-    onClick?: MouseEventHandler,
+    onClick_GitHub?: MouseEventHandler,
+    onClick_Deployment?:MouseEventHandler,
     delay?: number,
 }
 
@@ -29,13 +31,22 @@ export function Card(props: card) {
                 <div className="text-3xl font-bold">
                     {props.title}
                 </div>
-                <motion.div 
+               <div className="flex gap-2">
+               <motion.div 
                     whileHover={{ scale: 1.2, rotate: 5 }}
-                    onClick={props.onClick} 
+                    onClick={props.onClick_GitHub} 
                     className="hover:scale-125"
                 >
                     {<Github height={30} width={30} />}
                 </motion.div>
+                <motion.div 
+                    whileHover={{ scale: 1.2, rotate: 5 }}
+                    onClick={props.onClick_Deployment} 
+                    className="hover:scale-125"
+                >
+                    {<WebSiteIcon />}
+                </motion.div>
+               </div>
             </motion.div>
             <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
