@@ -1,15 +1,12 @@
 {
+  "functions": {
+    "app/[[...route]]/route.ts": {
+      "maxDuration": 30
+    }
+  },
   "rewrites": [
     {
-      "source": "/about",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
