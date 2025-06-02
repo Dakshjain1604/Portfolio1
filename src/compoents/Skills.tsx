@@ -21,23 +21,42 @@ import { TailwindIcon } from "../icons/Tailwindcss";
 import { TypeScriptIcon } from "../icons/TypeScriptIcon";
 import { ZodIcon } from "../icons/ZodIcon";
 import { SkillBox } from "./subCompoents/SkillButton";
+import { motion } from "framer-motion";
 
 export function Skills() {
   return (
     <div className="pb-20 pt-20">
-      <div className="text-6xl font-bold pt-10 pb-10 text-white flex justify-center">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="text-6xl font-bold pt-10 pb-10 text-white flex justify-center"
+      >
         Skills
-      </div>
+      </motion.div>
       <div className="flex flex-col justify-center">
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5"
+        >
           <SkillBox logo={<HtmlIcon />} text="Html" />
           <SkillBox logo={<Cssicon />} text="CSS" />
           <SkillBox logo={<JavaScript />} text="JavaScript" />
           <SkillBox logo={<PythonIcon />} text="Python" />
           <SkillBox logo={<NodejsIcon />} text="Node js" />
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5"
+        >
           <SkillBox logo={<Reactlogo />} text="React js" />
           <SkillBox logo={<TypeScriptIcon />} text="TypeScript" />
           <SkillBox logo={<MySqlIcon />} text="My SQL" />
@@ -45,23 +64,35 @@ export function Skills() {
           <SkillBox logo={<RedisIcon />} text="Redis" />
           <SkillBox logo={<AzureIcon />} text="Azure" />
           <SkillBox logo={<DockerIcon />} text="Docker" />
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5"
+        >
           <SkillBox logo={<GraphhQL />} text="GraphQl" />
           <SkillBox logo={<PostManIcon />} text="PostMan" />
           <SkillBox logo={<SwaggerIcon />} text="Swagger UI" />
           <SkillBox logo={<GitIcon />} text="Git" />
           <SkillBox logo={<Github height={25} width={25} />} text="GitHub" />
           <SkillBox logo={<NextjsIcon />} text="Next js" />
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap justify-center gap-2 sm:gap-5 pb-5"
+        >
           <SkillBox logo={<ZodIcon />} text="Zod" />
           <SkillBox logo={<TailwindIcon />} text="Tailwind CSS" />
           <SkillBox logo={<PrismIcon />} text="Prisma" />
           <SkillBox logo={<PostgreSQL />} text="PostgreSQL" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

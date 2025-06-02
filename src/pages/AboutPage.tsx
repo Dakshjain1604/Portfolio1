@@ -10,7 +10,7 @@ export function AboutMe() {
         <div className="text-base sm:text-lg pt-10 sm:pt-20 flex flex-col pb-10 sm:pb-20 max-w-3xl">
           <div className="text-2xl sm:text-4xl pb-4 sm:pb-8">
             Hi, I'm{" "}
-            <b className="text-3xl sm:text-5xl text-white">Daksh Jain</b>
+            <b className="text-9xl sm:text-7xl text-white">Daksh Jain</b>
           </div>
           <div className="text-justify leading-relaxed text-sm sm:text-base md:text-lg">
             <p>

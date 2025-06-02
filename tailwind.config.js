@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: [],
   theme: {
     extend: {
       colors:{
         blue:{
           500:"#2D3748",
-          200:"#e0eafc",
+          200:" #e0eafc",
           300:"#cfdef3",
         },
         orange:{
@@ -20,10 +17,10 @@ export default {
         }
       },
       cursor: {
-        fancy: 'url("/icons8-cursor-50.png"), auto',
+        fancy: 'url("protfolio/public/icons8-cursor-50.png"), auto',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ,
         serif: ['Playfair Display', 'serif'],
         dancing: ['Dancing Script', 'cursive'],
         limelight: ['Limelight', 'cursive'],
